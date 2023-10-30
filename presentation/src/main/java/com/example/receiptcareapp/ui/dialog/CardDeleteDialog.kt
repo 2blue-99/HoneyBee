@@ -37,8 +37,8 @@ class CardDeleteDialog(
                 dismiss()
             }
             deleteOkBtn.setOnClickListener{
-                cardDetailBottomSheet.dismiss()
                 cardViewModel.deleteServerCardDate(id)
+                cardDetailBottomSheet.dismiss()
                 dismiss()
             }
         }

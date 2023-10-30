@@ -8,6 +8,10 @@
             name="cardDate"
             type="com.example.domain.model.remote.receive.card.CardDetailData" />
 
+        <variable
+            name="util"
+            type="com.example.domain.util.StringUtil" />
+
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

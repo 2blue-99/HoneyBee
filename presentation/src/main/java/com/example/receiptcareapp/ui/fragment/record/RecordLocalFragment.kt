@@ -109,7 +109,7 @@ class RecordLocalFragment(
     override fun initObserver() {
         viewModel.roomData.observe(viewLifecycleOwner) {
             recordLocalAdapter.dataList.clear()
-            recordLocalAdapter.dataList = it.map { it -> it.toRecyclerShowData() }.toMutableList()
+            recordLocalAdapter.dataList = it?.map { it -> it.toRecyclerShowData() }!!.toMutableList()
                 .also { dataList = it }
             setTextAndVisible("데이터가 비었어요!", recordLocalAdapter.dataList.isEmpty())
         }

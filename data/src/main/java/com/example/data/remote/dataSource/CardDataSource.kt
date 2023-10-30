@@ -30,7 +30,7 @@ interface CardDataSource {
         @Path("id") id: String,
     ): ServerResponse<ServerCardDetailResponse>
 
-    @DELETE("bill/delete/card/{uid}")
+    @DELETE("bill/card/delete/{uid}")
     suspend fun deleteCardDataSource(
         @Path("uid") uid:Long
     ): ServerResponse<Int>
